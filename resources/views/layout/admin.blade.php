@@ -1,30 +1,31 @@
-@include('admin.public.header');
+@include('admin.public.header')
 <!-- 中部开始 -->
 <!-- 左侧菜单开始 -->
-@include('admin.public.sidebar');
+@include('admin.public.sidebar')
 <!-- 左侧菜单结束 -->
 <!-- 右侧主体开始 -->
-<div class="page-content">
-    <div class="layui-tab tab" lay-filter="xbs_tab" lay-allowclose="false">
-        <ul class="layui-tab-title">
-            <li class="home">
-                <i class="layui-icon">&#xe68e;</i>我的桌面</li></ul>
-        <div class="layui-unselect layui-form-select layui-form-selected" id="tab_right">
-            <dl>
-                <dd data-type="this">关闭当前</dd>
-                <dd data-type="other">关闭其它</dd>
-                <dd data-type="all">关闭全部</dd></dl>
+<div id="content">
+    <!--breadcrumbs-->
+    <div id="content-header">
+        <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a></div>
+    </div>
+    <div class="container-fluid">
+        <div class="quick-actions_homepage">
+            <ul class="quick-actions">
+                <li class="bg_lb"> <a href="index.html"> <i class="icon-dashboard"></i> <span class="label label-important">20</span> My Dashboard </a> </li>
+                <li class="bg_lg span3"> <a href="charts.html"> <i class="icon-signal"></i> Charts</a> </li>
+                <li class="bg_ly"> <a href="widgets.html"> <i class="icon-inbox"></i><span class="label label-success">101</span> Widgets </a> </li>
+                <li class="bg_lo"> <a href="tables.html"> <i class="icon-th"></i> Tables</a> </li>
+                <li class="bg_ls"> <a href="grid.html"> <i class="icon-fullscreen"></i> Full width</a> </li>
+                <li class="bg_lo span3"> <a href="form-common.html"> <i class="icon-th-list"></i> Forms</a> </li>
+                <li class="bg_ls"> <a href="buttons.html"> <i class="icon-tint"></i> Buttons</a> </li>
+                <li class="bg_lb"> <a href="interface.html"> <i class="icon-pencil"></i>Elements</a> </li>
+                <li class="bg_lg"> <a href="calendar.html"> <i class="icon-calendar"></i> Calendar</a> </li>
+                <li class="bg_lr"> <a href="error404.html"> <i class="icon-info-sign"></i> Error</a> </li>
+            </ul>
         </div>
-        <div class="layui-tab-content">
-            <div class="layui-tab-item layui-show">
-                <iframe src='{{ url('admin/welcome') }}' frameborder="0" scrolling="yes" class="x-iframe"></iframe>
-            </div>
-        </div>
-        <div id="tab_show"></div>
     </div>
 </div>
-<div class="page-content-bg"></div>
-<style id="theme_style"></style>
 <!-- 右侧主体结束 -->
 <!-- 中部结束 -->
-@include('admin.public.fooder');
+@include('admin.public.fooder')

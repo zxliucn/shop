@@ -32,7 +32,6 @@ class LoginController extends Controller
     public function loginAuth(Request $request)
     {
         $input = $request->except('_token');
-
         $rules = [
             'username' => 'required|between:4,18',
             'password' => 'required|between:6,18',
@@ -47,6 +46,7 @@ class LoginController extends Controller
             'code.required'=>"验证码不能为空",
             'code.captcha'=>"验证码不正确，请重新输入",
         ];
+
         $validator=Validator::make($input,$rules,$msg);
 
         if($validator->fails()){
