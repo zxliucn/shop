@@ -50,7 +50,7 @@
         <div class="control-group">
             <div class="controls">
                 <div class="main_input_box">
-                    <span class="add-on bg_ly"><i class="icon-star"></i></span><input type="text" name="code"  placeholder="验证码" />
+                    <span class="add-on bg_ly"><i class="icon-unlock"></i></span><input type="text" name="code"  placeholder="验证码" />
                 </div>
             </div>
         </div>

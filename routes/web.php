@@ -54,7 +54,7 @@ Route::group(['prefix'=>'admin','middleware'=>['isLogin','hasRole']],function ()
 });
 
 /**
- * 博客登录前台统一路由配置
+ * 
  */
 
 
